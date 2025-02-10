@@ -1,0 +1,706 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Navbar Styling */
+nav.navbar1 {
+    width: 100%;
+    background-color: white;
+    height: 80px;
+}
+
+/* Navigation List */
+ul.navList {
+    list-style-type: none;
+    margin-top: 20px;
+    float: left;
+}
+
+li.navItem {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+a.ListItem {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+}
+
+a.ListItem:hover {
+    border-bottom: 2px solid black;
+}
+
+a.ListItem:visited {
+    color: black;
+}
+
+/* Logo */
+.LOGO {
+    width: 90px;
+    height: 70px;
+    float: left;
+}
+
+/* Custom Icons */
+.customIcon {
+    float: left;
+    margin: 25px 50px 25px 10px;
+}
+
+.rightIcons {
+    float: right;
+}
+
+.rightIcons i {
+    margin: 25px 10px;
+}
+
+/* Offers Section */
+.offers {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    height: 500px;
+    background-image: url("./assets/headerImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div.headerImage {
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 30px;
+}
+
+div.headerImage button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links li {
+    background-color:black;
+    color:white;
+    margin: 0;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-right: 1px solid gray; 
+    display: inline-block;
+}
+
+.navbar-links li:last-child {
+    border-right: none;
+}
+
+/* Search Input */
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.navbar-search button {
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+
+}
+
+.navbar-search button:hover {
+    background-color: #ddd;
+}
+
+/* Navbar Logos */
+.logo {
+    height: 30px;
+    display: inline-block;
+}
+
+.navbar-logo img {
+    height: 70px;
+}
+
+/* Icons */
+.icons {
+    height: 25px;
+}
+
+.user-icon {
+    height: 20px;
+    margin-right: 5px;
+    left:0;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+}
+
+/* Individual Navbar Styling */
+.bbc {
+    background-color: black;
+    color: white;
+}
+
+.cnn {
+    background-color: black;
+    color: white;
+    margin: 0px 10px 0px 10px;
+    height: 50px;
+    justify-content: space-around;
+
+}
+
+.linkedin {
+    background-color: #fafafa;
+    color: black;
+    height: 50px;
+}
+
+/* LinkedIn Logo */
+.logo img {
+    height: 60px;
+}
+
+/* Left Section */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and search bar */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #eef3f8;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.search-bar i {
+    color: gray;
+    margin-right: 5px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+/* Navigation Icons */
+.linkedin .right{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    position: absolute;
+    right:20px;
+}
+/* Left Section: Logo + Search Bar */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color:black;
+    cursor: pointer;
+}
+
+.icon i {
+    font-size: 20px;
+}
+
+.icon:hover {
+    color: black;
+}
+.block{
+background-color:white;
+color:#262626;
+margin: 0;
+padding: 5px 20px;
+cursor: pointer;
+text-transform: capitalize;
+border-left: 1px solid lightgray; 
+display: inline-block;
+}
+.appimg{
+    height: 25px;
+    width: 25px
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-bar {
+        display: none;
+    }
+
+    .nav-icons {
+        gap: 10px;
+    }
+
+    .icon span {
+        display: none;
+    }
+}
+.instagram{
+    background-color: #fafafa;
+    color: black;
+    height: 50px;
+    
+   
+} 
+.material-symbols-outlined{ 
+    font-size: 50px;
+    color: black;
+}
+
+.center-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.search-barr {
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+    left: 30%;
+    
+}
+
+
+
+.search-barr input {
+   
+    padding: 8px 30px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    background-color: #fafafa;
+    
+}
+
+
+.search-barr i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    
+}
+.nav-iconss {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-iconss i {
+    font-size: 22px;
+    color: #262626;
+    cursor: pointer;
+}
+
+.nav-iconss i:hover {
+    color: #555;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.youtube{
+    background-color: white;
+    color: black;
+    left: 10px;
+}
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .menu-icon {
+        font-size: 20px;
+        margin-right: 15px;
+        cursor: pointer;
+        /* gap: 40px; */
+    }
+    .center {
+    display: flex;
+    /* flex: 1; */
+    max-width: 500px;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:350px;
+}
+.youtube .right{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    position: absolute;
+    right:20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+.search-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Right Section (Icons) */
+.right {
+    display: flex;
+    gap: 20px;
+}
+
+.right i {
+    font-size: 22px;
+    color: #262626;
+    cursor: pointer;
+}
+
+
+.facebook {
+    background-color: white;
+    color: black;
+    height: 50px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding-left: 10px; /* Adjust as needed */
+}
+
+.facebook .container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes it a perfect circle */
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* Adjust positioning relative to the logo */
+     position:absolute;
+     left: 70px;
+}
+
+.container .icon {
+    font-size: 20px; /* Adjust icon size */
+    color: black; /* Adjust icon color if needed */
+}
+
+.facebook .left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.facebook .center {
+    display: flex;
+    gap: 80px;
+    font-size: 22px;
+    justify-content: center;
+}
+
+/* Right Section */
+.facebook .right {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+
+.facebook .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.facebook input {
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.facebook i {
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Right Container (holds all icons) */
+.rightcontainer {
+    display: flex;
+    gap: 10px;  /* Space between icons */
+    align-items: center;
+}
+
+/* Individual icon containers */
+.rightcontainer .icon {
+    width: 35px; /* Increased size */
+    height: 35px;
+    border-radius: 50%; /* Circular shape */
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon styling */
+.rightcontainer .icon i {
+    font-size: 18px;
+    color: black;
+}
+/* Gmail Navbar Styles */
+.gmail {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section (Menu & Logo) */
+.gmail .left {
+    display: flex;
+    align-items: center;
+}
+
+.gmail .menu-icon {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.gmail .logo {
+    height: 35px;
+}
+
+/* Center Section (Search Bar) */
+.gmail .center {
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f4;
+    padding: 8px 12px;
+    border-radius: 24px;
+    width: 40%;
+}
+
+.gmail .center i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: gray;
+}
+
+.gmail .center input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+}
+
+/* Right Section (Icons & Profile) */
+.gmail .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.gmail .right i {
+    font-size: 18px;
+    cursor: pointer;
+    color: gray;
+}
+
+.gmail .right .profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.bootstrap {
+    background-color:#563d7c;
+    color: white;
+    font-size: 20px;
+    left: 10px;
+}
+
+.bootstrap img {
+    width: 40px;
+    margin-right: 0;
+}
+.bootstrap ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    left: 100px;
+}
+.ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-icons i {
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+    
+}
+.nav-icons i:hover {
+    color: #f8f9fa;
+}
+
+.bootstrap .download {
+    background-color: blueviolet;
+    color: rgb(255, 242, 0);
+    border: 2px solid rgb(255, 242, 0);  /* Added border */
+    padding: 5px 10px;
+    border-radius:0;
+    cursor: pointer;
+}
+.bootstrap .right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+select{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.titles{
+    display: flex;
+    margin-top: 10px;
+    color: white;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+    top: 70px;
+    right: 45%;
+
+  }
+  .cnn-class{
+    height: 50px;
+    background-color: black;
+    display: flex;
+    gap:none;
+    margin-top: 10px;
+    
+  }
+  .ccn{
+    margin: 0px 10px 0px 10px;
+    height: 50px;
+    justify-content: space-around;
+  }
+  .sub-class {
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    justify-content:space-between; /* Aligns items to the right */
+    align-items: center; /* Aligns items vertically */
+    position: absolute;
+    right: 1%; /* Ensures it stays at the right */
+    color:white;
+    margin: 0px 10px 0px 10px;
+}
+.navbar-se {
+    display: flex;
+    align-items: center;
+}
+.medium {
+    background-color: white;
+    color: black;
+    height: 50px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding-left: 10px; /* Adjust as needed */
+}
+.medium img{
+height: 30px;
+position: absolute;
+left: 80px;
+}
+.medium .right {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    position: absolute;
+    right:20px;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+</head>
+<body>
+
+    <!-- BBC Navbar -->
+    <nav class="navbar bbc">
+        <img src="assets/bbc.jpeg" alt="BBC Logo" class="logo" >
+        <ul class="navbar-links">
+            <li><img src="assets/user.png" alt="User Icon" class="user-icon" style="position: absolute; left: 150px; border-radius: 50px;"> </li><p style="position: absolute; left:175px; margin-top: 5px;">Sign in</p>
+            <li>News</li>
+            <li>Sport</li>
+            <li>Reel</li>
+            <li>Worklife</li>
+            <li>Travel</li>
+            <li>Future</li>
+            <li class="dropdown">More</li>
+        </ul>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+
+    <!-- CNN Navbar -->
+    <nav>
+        <div class="navbar cnn-class">
+            <img src="assets/cnn.jpeg" alt="CNN" class="ccn">
+            
+            <ul class="titles">
+                <li>World</li>
+                <li>Us Politics</li>
+                <li>Business</li>
+                <li>Health</li>
+                <li>Entertainment</li>
+                <li>Style</li>
+                <li>Travel</li>
+                <li>Sports</li>
+                <li>Videos</li>
+            </ul>
+    
+            <!-- Moved outside titles -->
+            <div class="sub-class">
+                <span>Editor</span>
+                <select name="dropdown" id="dropdown"></select>
+                <i class="fa-regular fa-circle-user"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- LinkedIn Navbar -->
+    <nav class="navbar linkedin">
+        <div class="left-section">
+        <img src="assets/download.png" alt="LinkedIn Logo" class="logo img">
+              <!-- Middle Section: Search Bar -->
+              <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            </div>
+            <!-- Right Section: Navigation Icons -->
+            <div class="right">
+                <i class="fas fa-home"></i>
+                <div class="icon"><i class="fas fa-user-friends"></i></div>
+                <div class="icon"><i class="fas fa-briefcase"></i></div>
+                <div class="icon"><i class="fas fa-comment-dots"></i></div>
+                <div class="icon"><i class="fas fa-bell"></i></div>
+                <div class="icon"><i class="fas fa-user-circle"></i></div>
+                
+                <div class="block">
+                <img src="assets/apps.png" alt="apps" class="appimg">
+                <img src="assets/vid.png" alt="apps" class="appimg">
+            </div>
+            </div>
+            </div>
+            
+                    <!-- <span class="material-symbols-outlined"></span> -->
+                
+        </nav>
+    
+    </body>
+    </html>
+    
+
+    <!-- Instagram Navbar -->
+    <nav class="navbar instagram">
+    
+        <img src="assets/insta.jpg" alt="Instagram" class="instagram">
+    
+        <div class="search-barr">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        
+
+        <div class="nav-iconss">
+            <img src="assets/home.png" alt="apps" class="appimg">
+            <i class="fa-regular fa-paper-plane"></i>
+            <i class="fa-regular fa-compass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <img src="assets/Gphoto.jpg" alt="Profile" class="profile-pic">
+        </div>
+       
+    </nav>
+ 
+
+    <!-- YouTube Navbar -->
+    <nav class="navbar youtube">
+        <div class="left">
+            <i class="fas fa-bars menu-icon"></i>
+        <img src="assets/youtube.jpeg" alt="YouTube Logo" class="logo">
+
+        <div class="center">
+            <input type="text" placeholder="Search" class="search-input">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Right Section (Icons) -->
+        
+        <div class="right">
+            <i class="fa-solid fa-video"></i>
+            <img src="assets/apps.png" alt="apps" class="appimg">
+            <i class="fas fa-bell"></i>
+            <img src="assets/Gphoto.jpg" alt="Profile" class="profile-pic">
+        </div>
+    </nav>
+
+    <!-- Facebook Navbar -->
+   <nav class="navbar facebook">
+    <!-- Facebook Logo -->
+    <img src="assets/facebook.jpeg" alt="Facebook Logo" class="logo">
+
+    <!-- Search Container (Next to Logo) -->
+    <div class="container">
+        <div class="icon">
+            <i class="fas fa-search"></i> 
+        </div>
+    </div>
+
+    <!-- Center Navigation Icons -->
+    <div class="center">
+        <i class="fas fa-home"></i>
+        <img src="assets/flag.png" alt="img" class="appimg">
+        <i class="fas fa-tv"></i>
+        <i class="fas fa-store"></i>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+
+    
+        <!-- Right Section (Notifications & Profile) -->
+        <div class="rightcontainer">
+            <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+            <div class="icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        
+    </nav>
+    
+
+    <!-- Gmail Navbar -->
+    <nav class="navbar gmail">
+        <div class="left">
+            <i class="fas fa-bars menu-icon"></i>
+        <img src="assets/gmail.jpeg" alt="Gmail Logo" class="logo">
+        </div>
+        <div class="center">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search mail">
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="right">
+            <i class="fa-regular fa-circle-question"></i>
+            <i class="fas fa-cog"></i>
+            <img src="assets/apps.png" alt="apps" class="appimg">
+            <img src="assets/Gphoto.jpg" alt="Profile" class="profile-pic">
+        </div>
+        
+    </nav>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar bootstrap">
+        <img src="assets/download.jpeg" alt="Bootstrap Logo" class="logo" >
+        <ul>
+            <li>Home</li>
+            <li>Documentation</li>
+            <li>Examples</li>
+            <li>Icons</li>
+            <li>Themes</li>
+            <li>Expo</li>
+            <li>Blog</li>
+        </ul>
+    </div>
+    <p style="position: absolute; right: 275px;">v4.5</p>
+   
+    <div class="nav-icons">
+        <i class="fa-solid fa-caret-down" style="position: relative; right: 40px;"></i>
+        
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-aperture"></i>
+    
+        <button class="download">Download</button>
+    </div>
+    </nav>
+
+    <!-- Medium Navbar -->
+    <nav class="navbar medium">
+        <img src="assets/medium.jpeg" alt="Medium Logo" class="medium">
+        <div class="right">
+            <i class="fas fa-search"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-regular fa-bell"></i>
+         </div>
+    </nav>
+
+</body>
+</html>
